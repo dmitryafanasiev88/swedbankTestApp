@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="H2S-84-15Z" customClass="RegionCell" customModule="LocationsViewer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H2S-84-15Z" id="udu-SN-2ei">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4n3-wP-qbT">
+                        <rect key="frame" x="16" y="6" width="319" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4n3-wP-qbT" firstAttribute="top" secondItem="udu-SN-2ei" secondAttribute="top" constant="6" id="4uH-z0-ZhC"/>
+                    <constraint firstAttribute="trailing" secondItem="4n3-wP-qbT" secondAttribute="trailing" constant="6" id="AV1-fn-RmQ"/>
+                    <constraint firstItem="4n3-wP-qbT" firstAttribute="leading" secondItem="udu-SN-2ei" secondAttribute="leading" constant="16" id="HPL-QP-swV"/>
+                    <constraint firstAttribute="bottom" secondItem="4n3-wP-qbT" secondAttribute="bottom" constant="6" id="seW-Ql-Q1S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="regionNameLabel" destination="4n3-wP-qbT" id="fX6-OV-63l"/>
+            </connections>
+            <point key="canvasLocation" x="-125.5" y="-9"/>
+        </tableViewCell>
+    </objects>
+</document>
